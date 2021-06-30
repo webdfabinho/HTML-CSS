@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Aula Desenvolvimento Web">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Fabio Neri">
+		<title>EXERCICIO 005</title>
+		
+	<script>
+	function msg() {
+	  alert(" Dados enviados para processador.php");
+	}
+	</script>
+	
+
+	</head>
+	<body>
+	<div id="divCenter">
+		<form action="processador.php" class="formulario" method="post">
+		<table border=0 width=50%>
+		
+		<TR>
+			<td bgcolor="#00BFFF" colspan="3" ><B>Não é um associado? cadastre-se:</B></TD>
+			<td bgcolor="#00008B"><B></B></TD>
+			
+		</TR>
+			<TR>
+				<TD>
+					NOME </li>
+				</TD>
+				<TD colspan="3">
+					<input type="text" size="95" name="nome" /></li>
+				</TD>
+			</TR>
+			<TR>
+				<TD>
+					SOBRENOME
+				</TD>
+				<TD colspan="3">
+					<input type="text" size="95" name="sobrenome" />
+				</TD>
+			</TR>
+			<TR>
+				<TD>
+					CPF:
+				</TD>
+				<TD colspan="3">
+					<input type="text" size="95" name="cpf" />
+				</TD>
+			</TR>
+			<TR>
+				<TD>
+					E-MAIL:
+				</TD>
+				<TD colspan="3">
+					<input type="email" size="95" name="e-mail" placeholder="digite seu e-mail aqui">
+				</TD>
+			</TR>
+			<TR>
+				<TD>
+					WEBSITE:
+				</TD>
+				<TD colspan="3">
+					<input type="text" size="95" name="website" />
+				</TD>
+			</TR>
+			<TR>
+				<TD>
+					ENDEREÇO:
+				</TD>
+				<TD colspan="3">
+					<input type="text" size="95" name="endereco" />
+				</TD>
+			</TR>
+			<TR>
+				<TD>
+					BAIRRO:
+				</TD>
+				<TD>
+					<input type="text" size="20"  name="bairro" />
+				</TD>
+				<TD>
+					CIDADE:
+				</TD>
+				<TD>
+					<input type="text" size="50" name="cidade" />
+				</TD>
+			</TR>
+			<TR>
+				<TD>
+					CEP:
+				</TD>
+				<TD>
+					<input type="text" name="cep" />
+				</TD>
+				<TD>
+					UF:
+				</td>
+				<TD>
+					<select>
+						<option value="">Selecione</option>
+						<option value="AC">AC</option>
+						<option value="AL">AL</option>
+						<option value="AP">AP</option>
+						<option value="AM">AM</option>
+						<option value="BA">BA</option>
+						<option value="CE">CE</option>
+						<option value="DF">DF</option>
+						<option value="ES">ES</option>
+						<option value="GO">GO</option>
+						<option value="MA">MA</option>
+						<option value="MS">MS</option>
+						<option value="MT">MT</option>
+						<option value="MG">MG</option>
+						<option value="PA">PA</option>
+						<option value="PB">PB</option>
+						<option value="PR">PR</option>
+						<option value="PE">PE</option>
+						<option value="PI">PI</option>
+						<option value="RJ">RJ</option>
+						<option value="RN">RN</option>
+						<option value="RS">RS</option>
+						<option value="RO">RO</option>
+						<option value="RR">RR</option>
+						<option value="SC">SC</option>
+						<option value="SP">SP</option>
+						<option value="SE">SE</option>
+						<option value="TO">TO</option>
+					</select>
+				</TD>
+			</TR>
+			<TR>
+				<TD>
+					TELEFONE:
+				</TD>
+				<TD>
+					<input type="text"  name="telefone" />
+				</TD>
+				<TD>
+					TELEFONE 2:
+				</TD>
+				<TD>
+					<input type="text" name="recado" />
+				</TD>
+			</TR>
+			<TR>
+				<TD>
+					NASCIMENTO:
+				</TD>
+				<TD>
+					<input type="datetime-local" name="bdaytime">
+				</TD>
+				<TD>
+					SEXO:
+				</TD>
+				<TD>
+					<input type="radio" name="sexo" value="masculino"/>MASCULINO 
+					<input type="radio" name="sexo" value="feminino"/>FEMININO
+					<input type="radio" name="sexo" value="outros"/>OUTROS
+				</TD>
+			</TR>
+			<TR>
+				<TD>
+					CELULAR:
+				</TD>
+				<TD>
+					<input type="text" name="celular" />
+				</TD>
+				<TD>
+					ESTADO CIVIL:
+				</TD>
+				<TD>
+					<select>
+						<option value="">Selecione</option>
+						<option value="solteiro">SOLTEIRO(A)</option>
+						<option value="casado">CASADO(A)</option>
+						<option value="viuvo">VIUVO(A)</option>
+						<option value="divorciado">DIVORCIADO(A)</option>
+					</select>
+				</TD>
+			</TR>
+			<TR>
+				<TD>
+					LOGIN:
+				</TD>
+				<TD>
+					<input type="text" size="15" name="login" />
+				</TD>
+				<TD>
+					SENHA:
+				</TD>
+				<TD>
+					<input type="password" name="senha" placeholder="Digite sua Senha">
+				</TD>
+			</TR>
+			<TR>
+				<TD colspan="4">
+					<b>DESEJA RECEBER INFORMAÇÕES SOBRE OS SEGUINTES ASSUNTOS ABAIXO:</b>
+				</TD>
+			</TR>
+			<TR>
+				<TD colspan="4">
+				<input type="checkbox" name="tecnologia" value="bicicleta">TECNOLOGIA
+				<input type="checkbox" name="esportes" value="carro">ESPORTES
+				<input type="checkbox" name="automoveis" value="moto">AUTOMOVEIS
+				<input type="checkbox" name="culinaria" value="bicicleta">CULINARIA
+				<input type="checkbox" name="politica" value="carro">POLITICA
+				<input type="checkbox" name="policial" value="moto">POLICIAL
+				<input type="checkbox" name="tempo" value="moto">TEMPO
+				</TD>
+				
+			</TR>
+			<TR>
+				<TD colspan="4">
+				<input type="checkbox" name="tecnologia" value="cultura">CULTURA
+				<input type="checkbox" name="esportes" value="economia">ECONOMIA
+				<input type="checkbox" name="automoveis" value="jogos">JOGOS
+				<input type="checkbox" name="culinaria" value="educacao">EDUCAÇÃO
+				<input type="checkbox" name="politica" value="viagem">VIAGEM
+				<input type="checkbox" name="policial" value="empregos">EMPREGOS
+				<input type="checkbox" name="tempo" value="moda">MODA E ESTILO
+				</TD>
+			</TR>
+			<TD colspan="4">
+				<input type="checkbox" name="tecnologia" value="autorizo">LI AS REGRAS DE CADASTRO E AUTORIZO A CRIAÇÃO DO USUÁRIO.
+			</TD>
+			
+		</table>
+		
+		  <input type="button" value="Clique Aqui" onclick="msg()"> <input type="reset">
+		</form>
+		</div>
+	</body>
+</html>
